@@ -12,7 +12,7 @@ export default function NavBar ({padding}) {
             </ul>
             <Carrito />
             <span>
-                WaldenLibros
+                Walden Libros
             </span>
         </nav>
     )

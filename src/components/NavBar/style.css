@@ -10,6 +10,7 @@ nav ul {
     list-style: none;
     float: right;
     margin: 0px;
+    padding: 0px;
 }
 
 nav ul li {
@@ -17,12 +18,7 @@ nav ul li {
     line-height: 80px;
     margin: 0px 10px;
     font-size: 1.2rem;
-}
-
-img {
-    float: right;
     
-    line-height: 80px;
 }
 
 span {
