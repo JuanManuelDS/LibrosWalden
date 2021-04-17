@@ -1,0 +1,28 @@
+nav {
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(14, 78, 14);
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 10px;
+    font-size: 1.2rem;
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: bold;
+    float: left;
+    line-height: 80px;
+    padding: 0px 40px;
+}

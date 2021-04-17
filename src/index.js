@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavBar from './components/NavBar/NavBar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NavBar padding={'0px 20px'}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
