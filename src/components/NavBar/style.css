@@ -19,6 +19,12 @@ nav ul li {
     font-size: 1.2rem;
 }
 
+img {
+    float: right;
+    
+    line-height: 80px;
+}
+
 span {
     font-size: 1.6rem;
     font-weight: bold;
