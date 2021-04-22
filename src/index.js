@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavBar padding={'0px 20px'}/>
-    <ItemListContainer text={'Hola soy el container'}/>
+    <NavBar />
+    <ItemListContainer />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,30 @@
+.Item{
+    width: 205px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-radius: 25px;
+}
+
+.Item img {
+    height: 250px;
+    width: auto;
+}
+
+.Item div{
+   margin:0px 20px;
+}
+
+.Item-titulo {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.Item-autor{
+    color: rgb(102, 102, 102);
+}
+
+
