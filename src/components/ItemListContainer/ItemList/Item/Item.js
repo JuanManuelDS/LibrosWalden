@@ -1,14 +1,19 @@
 import React from 'react';
 import './Item.css';
 
-export default function Item({imagen, titulo, autor}) {
+export default function Item(catalogo) {
     return (
-        <div className='Item'>
-            <img src={imagen} />
+        <React.Fragment>
+        {catalogo.map(producto => {
+            <div className='Item'>
+            <img src={producto.imagen} />
             <div>
-                <p className='Item-titulo'>{titulo}</p>
-                <p className='Item-autor'>{autor}</p>
+                <p className='Item-titulo'>{producto.titulo}</p>
+                <p className='Item-autor'>{producto.autor}</p>
             </div>
         </div>
+        })   
+        }
+        </React.Fragment>
     )
 }
