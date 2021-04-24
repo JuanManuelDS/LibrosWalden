@@ -43,10 +43,12 @@ export default function ItemListContainer () {
     task.then(resolved => {
         setProductos(resolved)
     });
-
+    
     return (
         <div className='ItemListContainer'>
             {productos.length>0 ? <ItemList prod = {productos} /> : <h1>Cargando catálogo...</h1>}
         </div>
     )
+
+    
 }
