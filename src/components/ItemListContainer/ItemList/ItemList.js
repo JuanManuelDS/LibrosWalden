@@ -3,10 +3,14 @@ import './ItemList.css';
 import Item from './Item/Item';
 
 
-export default function ItemList (productos) {
+export default function ItemList ({props}) {
+    console.log(props)
     return (
         <div className='ItemList'>
-            <Item prod={productos} />
+            {props.map(libro => {
+                <Item libro={libro} />
+                console.log(libro)
+            })}
         </div>
     );
 }
