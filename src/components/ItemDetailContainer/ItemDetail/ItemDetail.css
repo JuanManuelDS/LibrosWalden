@@ -1,0 +1,18 @@
+div.ItemDetail{
+    width: fit-content;
+    max-width: 1024px;
+    height: 80vh;
+    margin: 0px auto;
+    display: flex;
+    
+}
+
+div.ItemDetail img {
+    height: 500px;
+    width: auto;
+}
+
+.descripcion .titulo {
+    font-size: 3rem;
+    font-weight: bold;
+}
