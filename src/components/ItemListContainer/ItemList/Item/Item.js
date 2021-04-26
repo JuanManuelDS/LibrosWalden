@@ -1,15 +1,15 @@
 import React from 'react';
 import './Item.css';
 
-export default function Item({id, imagen, titulo, autor}) {
-    console.log(id)
+export default function Item({libro}) {
+    let img=Object.keys(libro.imagen);
     return (
-        <div className='Item'>
-            <img src={imagen} />
-            <div key={id}>
-                <p className='Item-titulo'>{titulo}</p>
-                <p className='Item-autor'>{autor}</p>
+        <div  key={libro.id} className='Item'>
+            <img src={libro.imagen[img]} />
+            <div>
+                <p className='Item-titulo'>{libro.titulo}</p>
+                <p className='Item-autor'>{libro.autor}</p>
             </div>
         </div>
-    )
+    ) 
 }

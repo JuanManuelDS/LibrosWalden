@@ -7,10 +7,7 @@ export default function ItemList ({props}) {
     console.log(props)
     return (
         <div className='ItemList'>
-            {props.map(libro => {
-                <Item libro={libro} />
-                console.log(libro)
-            })}
+            {props.map(libro => <Item libro={libro} />)}
         </div>
     );
 }

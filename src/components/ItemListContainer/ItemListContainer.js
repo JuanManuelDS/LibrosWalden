@@ -44,7 +44,6 @@ export default function ItemListContainer () {
             }, 3000)
         });
 
-
         task.then(resolved => {
             setProductos(resolved)
         });
