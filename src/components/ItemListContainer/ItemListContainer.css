@@ -6,3 +6,8 @@ div.ItemListContainer {
     justify-content: center;
     flex-direction: column;
 }
+
+.loadingGIF{
+    height: 500px;
+    width: auto;
+}

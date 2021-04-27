@@ -1,19 +1,22 @@
 import React from 'react';
 import './NavBar.css';
 import Carrito from '../Carrito/Carrito'
+import {Link} from 'react-router-dom'
 
 export default function NavBar ({padding}) {
     return (
         <nav>
-            <ul>
-                <li style={{padding}}>Home</li>
-                <li style={{padding}}>Nosotros</li>
-                <li style={{padding}}>Libros</li>
-            </ul>
-            <Carrito />
-            <span>
-                Walden Libros
-            </span>
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>Nosotros</li>
+                    <li>Libros</li>
+                </ul>
+                <Carrito />
+                <span>
+                    <Link to={'/'} style={{color: 'white', textDecoration: 'none'}}>Walden Libros</Link>
+                </span>
+            </div>
         </nav>
     )
 }

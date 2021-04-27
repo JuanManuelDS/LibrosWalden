@@ -3,6 +3,7 @@ import Catalogo from '../../Catalogo'
 import ItemDetail from './ItemDetail/ItemDetail'
 import {useParams} from 'react-router-dom'
 import './ItemDetailContainer.css'
+import loadingGIF from '../../multimedia/loading.gif'
 
 export default function ItemDetailContainer(){
     const [libro, setLibro] = useState({});
@@ -22,7 +23,7 @@ export default function ItemDetailContainer(){
 
     return (
         <div className='ItemDetailContainer'>
-            {Object.keys(libro).length!==0 ? <ItemDetail libro={libro}/> : <h1>Cargando detalles...</h1>}
+            {Object.keys(libro).length!==0 ? <ItemDetail libro={libro}/> : <img className='loadingGIF' src={loadingGIF} />}
         </div>
     )
 

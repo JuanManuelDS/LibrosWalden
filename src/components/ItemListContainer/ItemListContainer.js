@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import './ItemListContainer.css';
 import ItemList from './ItemList/ItemList';
-import Catalogo from '../../Catalogo'
+import Catalogo from '../../Catalogo';
+import loadingGIF from '../../multimedia/loading.gif'
 
 export default function ItemListContainer () {
     const [productos, setProductos] = useState([]);
@@ -22,7 +23,7 @@ export default function ItemListContainer () {
 
     return (
         <div className='ItemListContainer'>
-            {productos.length>0 ? <ItemList props={productos} /> : <h1>Cargando catálogo...</h1>}
+            {productos.length>0 ? <ItemList props={productos} /> : <img className='loadingGIF' src={loadingGIF} />}
         </div>
     )
 

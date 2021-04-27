@@ -12,7 +12,49 @@ div.ItemDetail img {
     width: auto;
 }
 
-.descripcion .titulo {
+
+.detalles .titulo {
     font-size: 3rem;
     font-weight: bold;
+}
+
+.detalles .autor{
+    font-size: 1.7rem;
+}
+
+.detalles .descripcion{
+    font-size: 1.3rem;
+    max-width: 400px;
+}
+
+form {
+    margin-top: 25px;
+}
+
+form select, input {
+    background-color: #2c2c2c;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin:5px;
+    border: none;
+}
+
+form select {
+    width: 220px;
+}
+
+form select:focus{
+    border: none;
+}
+
+input {
+    width: 180px;
+}
+
+form select option {
+    background-color: #d8d7d7;
+    color: black;
 }

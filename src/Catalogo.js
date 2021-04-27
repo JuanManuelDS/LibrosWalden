@@ -8,7 +8,7 @@ export default function Catalogo() {
     const catalogo = [
         {
             id: 0,
-            precio: 1099,
+            precio: [1699, 1199, 700],
             titulo: 'Walden',
             autor: 'Henry Thoreau',
             imagen: {WaldenImg},
@@ -16,7 +16,7 @@ export default function Catalogo() {
         },
         {
             id: 1,
-            precio: 2000,
+            precio: [2049, 1599, 599],
             titulo: 'Hacia un futuro vegano',
             autor: 'Tobias Leenaert',
             imagen: {HaciaUnFuturoVeganoImg},
@@ -24,7 +24,7 @@ export default function Catalogo() {
         },
         {
             id: 2,
-            precio: 799,
+            precio: [1800, 1150, 699],
             titulo: 'Un mundo feliz',
             autor: 'Aldous Huxley',
             imagen: {UnMundoFelizImg},
@@ -32,7 +32,7 @@ export default function Catalogo() {
         },
         {
             id: 3,
-            precio: 899,
+            precio: [2000, 1200, 500],
             titulo: 'Hippie',
             autor: 'Paulo Coelho',
             imagen: {HippieImg},

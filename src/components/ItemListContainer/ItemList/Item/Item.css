@@ -5,7 +5,9 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-}
+} 
+
+
 
 .Item img {
     height: 250px;
@@ -14,6 +16,11 @@
 
 .Item div{
    margin:0px 20px;
+}
+
+.Item div p.Item-titulo{
+    color: black;
+    
 }
 
 .Item-titulo {
