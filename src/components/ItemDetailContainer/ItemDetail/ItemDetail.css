@@ -1,8 +1,9 @@
 div.ItemDetail{
     width: fit-content;
     max-width: 1024px;
-    height: 80vh;
-    margin: 0px auto;
+    height: fit-content;
+    min-height: 70vh;
+    margin: 50px auto;
     display: flex;
     
 }

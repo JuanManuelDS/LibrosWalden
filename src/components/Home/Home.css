@@ -1,0 +1,53 @@
+main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../multimedia/libreria.jpg');
+    background-size: cover;
+}
+
+
+.bgDiv{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    margin: 0px;
+}
+
+.tituloHome{
+    display: block;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    max-width: 1366px;
+    margin: 0px auto;
+}
+
+div.favoritos {
+    height: 520px;
+    width: 900px;
+    background: rgb(226, 226, 226);
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 35px;
+    position: relative;
+}
+
+p.favoritos-titulo {
+    color: black;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.masLeido {
+    height: 85%;
+}
+
+.linkCatalogo {
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    margin: 5px auto;
+}

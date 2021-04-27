@@ -7,12 +7,12 @@ export default function NavBar ({padding}) {
     return (
         <nav>
             <div>
+            <Carrito /> 
                 <ul>
-                    <li>Home</li>
-                    <li>Nosotros</li>
-                    <li>Libros</li>
+                    <li><Link to={'/'} style={{color: 'white', textDecoration: 'none'}}>Home</Link></li>
+                    <li> <Link to={'/libros'} style={{color: 'white', textDecoration: 'none'}}>Libros</Link></li>
                 </ul>
-                <Carrito />
+                
                 <span>
                     <Link to={'/'} style={{color: 'white', textDecoration: 'none'}}>Walden Libros</Link>
                 </span>

@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import React from 'react';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -17,8 +18,12 @@ function App() {
             <ItemDetailContainer />
           </Route>
 
-          <Route path='/'>
+          <Route path='/libros'>
             <ItemListContainer />
+          </Route>
+
+          <Route path='/'>
+            <Home />
           </Route>
 
         </Switch>

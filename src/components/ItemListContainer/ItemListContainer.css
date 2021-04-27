@@ -1,5 +1,6 @@
 div.ItemListContainer {
-    height: 100vh;
+    height: fit-content;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     align-items: center;

@@ -3,6 +3,10 @@ import WaldenImg from './multimedia/Walden-HenryThoreau.jfif';
 import HaciaUnFuturoVeganoImg from './multimedia/Hacia-un-futuro-vegano.jfif';
 import UnMundoFelizImg from './multimedia/Un-mundo-feliz.jfif';
 import HippieImg from './multimedia/Hippie.jpg';
+import SisifoImg from './multimedia/El-mito-de-sisifo.jfif';
+import LoboEsteparioImg from './multimedia/El-lobo-estepario.jfif';
+import NHHavanaImg from './multimedia/Nuestro-hombre-en-la-havana.jfif';
+import FundacionImg from './multimedia/Fundacion.jfif'
 
 export default function Catalogo() {
     const catalogo = [
@@ -37,6 +41,38 @@ export default function Catalogo() {
             autor: 'Paulo Coelho',
             imagen: {HippieImg},
             descripcion: 'En su libro más autobiográfico, Paulo Coelho narra el encuentro entre dos jóvenes: Paulo, que sueña con ser escritor y llega a Amsterdam en busca de libertad y de un sentido para su vida, y Karla, una veinteañera de Rotterdam decidida a cambiar su forma de ver el mundo. Juntos recorrerán “la ruta Hippie” que realizaba el legendario Magic Bus, un viaje por Europa y Asia rumbo a Katmandú. Durante esta experiencia única y transformadora vivirán una gran historia de amor. Con ellos irán pasajeros de diferentes nacionalidades que a lo largo del recorrido se plantearán sus prioridades y valores vitales.'
+        },
+        {
+            id: 4,
+            precio: [2400, 1200, 600],
+            titulo: 'El lobo estepario',
+            autor: 'Herman Hesse',
+            imagen: {LoboEsteparioImg},
+            descripcion: 'Harry Haller es un hombre culto e incomprendido que está convencido de que en su interior viven un hombre y un lobo que se encuentran en conflicto. Haller ha perdido el interés en la vida, es pesimista y nada de lo que le rodea logra hacerle feliz, desprecia el mundo en el que vive y a las personas que lo habitan. Su vida no tiene sentido, hasta que se topa con un letrero luminoso que le invita a ir hacia un lugar llamado Teatro Mágico'
+        },
+        {
+            id: 5,
+            precio: [2100, 1300, 500],
+            titulo: 'Nuestro hombre en la Havana',
+            autor: 'Graham Greene',
+            imagen: {NHHavanaImg},
+            descripcion: 'Viudo y con una hija, Jim Wormold, vive cómodamente en Cuba, en los tiempos del dictador Batista. Es vendedor de aspiradoras, lleva una vida serena y al día, en términos económicos. Pero los deberes y obligaciones lo ponen frente a un dilema. Porque debe costearle los estudios a su hija, y debe además satisfacer ciertos caprichos de la juventud. Y hay una coyuntura política favorable: la situación de la isla es un pequeño enigma para los servicios secretos británicos y a Wormold le ofrecen convertirse en espía. Acepta, aun sin saber nada sobre el oficio. Para cumplir su rol, inventa informes que envía a sus superiores. El problema, naturalmente, es que ellos los leen como si fueran reales, y no las piezas de ficción de alguien obligado a escribirlas para no perder el ingreso extra que le ofrece su nuevo trabajo.'
+        },
+        {
+            id: 6,
+            precio: [2000, 1200, 400],
+            titulo: 'El mito de Sísifo',
+            autor: 'Albert Camus',
+            imagen: {SisifoImg},
+            descripcion: 'El título del ensayo proviene de un atribulado personaje de la mitología griega. En él, Camus discute la cuestión del suicidio y el valor de la vida, presentando el mito de Sísifo como metáfora del esfuerzo inútil e incesante del hombre. De esta forma plantea la filosofía del absurdo, que mantiene que nuestras vidas son insignificantes y no tienen más valor que el de lo que creamos. Siendo el mundo tan fútil, Camus pregunta, ¿hay alternativa al suicidio? El ensayo se inicia: No hay sino un problema filosófico realmente serio: el suicidio.'
+        },
+        {
+            id: 7,
+            precio: [3100, 1800, 800],
+            titulo: 'Trilogía de la fundación',
+            autor: 'Isaac Asimov',
+            imagen: {FundacionImg},
+            descripcion: 'El hombre se ha dispersado por toda la galaxia. La capital del imperio es Trántor, nido de nitrigas y corrupción. Gracias a su ciencia, fundada en el estudio matemático de los hechos históricos y el comportamieto de las masas, el psicohistoriador Hari Seldon prevé la caída del Imperio y el retorno a la barbarie durante varios milenios. A fin de reducir este período a mil años, Seldon decide crear una Fundación en un extremo de la galaxia.'
         }
     ];
 
