@@ -18,7 +18,11 @@ function App() {
             <ItemDetailContainer />
           </Route>
 
-          <Route path='/libros'>
+          <Route path='/categories/:category'>
+            <ItemListContainer />
+          </Route>
+
+          <Route path='/categories'>
             <ItemListContainer />
           </Route>
 

@@ -6,7 +6,7 @@ main {
 }
 
 
-.bgDiv{
+div.bgDiv{
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -14,7 +14,7 @@ main {
     margin: 0px;
 }
 
-.tituloHome{
+p.tituloHome{
     display: block;
     color: white;
     font-size: 4rem;
@@ -26,10 +26,10 @@ main {
 
 div.favoritos {
     height: 520px;
-    width: 900px;
+    width: 800px;
     background: rgb(226, 226, 226);
     margin: 30px auto;
-    padding: 10px;
+    padding: 20px;
     border-radius: 35px;
     position: relative;
 }
@@ -41,13 +41,52 @@ p.favoritos-titulo {
     font-weight: bold;
 }
 
-.masLeido {
-    height: 85%;
+button.link {
+    border: none;
+    background-color: rgb(49, 49, 49);
+    font-weight: bold;
+    width: 170px;
+    height: 40px;
+    position: absolute;
+    top: 220px;
 }
 
-.linkCatalogo {
-    font-weight: bold;
-    position: absolute;
-    bottom: 0px;
-    margin: 5px auto;
+button.link span.text,
+button.link span.arrow {
+    padding: 0px;
+    line-height: 40px;
+    font-size: 1.2rem;
+    margin: 0px 10px;
 }
+
+button.link span.arrow {
+    float: right;
+    font-weight: bold;
+}
+
+div.carousel-item div {
+    position: relative;
+}
+
+div.carousel-item img {
+    height: 350px;
+    width: auto;
+    float: left;
+    margin: 20px 20px 20px 80px;
+}
+
+div.carousel-item div p.titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+div.carousel-item div p.autor {
+    font-size: 1.5rem;
+    color: rgb(51, 51, 51);
+}
+
+div.carousel-indicators{
+    margin: 20px 0px 0px 0px
+}
+

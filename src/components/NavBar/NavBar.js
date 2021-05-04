@@ -10,7 +10,7 @@ export default function NavBar ({padding}) {
             <Carrito /> 
                 <ul>
                     <li><Link to={'/'} style={{color: 'white', textDecoration: 'none'}}>Home</Link></li>
-                    <li> <Link to={'/libros'} style={{color: 'white', textDecoration: 'none'}}>Libros</Link></li>
+                    <li> <Link to={'/categories'} style={{color: 'white', textDecoration: 'none'}}>Libros</Link></li>
                 </ul>
                 
                 <span>

@@ -11,7 +11,7 @@ export default function ItemDetail({libro}) {
                 <p className='titulo'>{libro.titulo}</p>
                 <p className='autor'>Autor: {libro.autor}</p>
                 <p className='descripcion'>{libro.descripcion}</p>
-                <form>
+                <form id='ItemDetailForm'>
                     <select name='formatoLibro' id='formatoLibro'>
                         <option value='tapaDura'>Tapa dura ${libro.precio[0]}</option>
                         <option value='tapaBlanda'>Tapa blanda ${libro.precio[1]}</option>

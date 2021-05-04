@@ -4,9 +4,9 @@ import Item from './Item/Item';
 
 
 export default function ItemList ({props}) {
-    console.log(props)
+
     return (
-        <div className='ItemList'>
+        <div id='ItemListLibros'>
             {props.map(libro => <Item libro={libro} />)}
         </div>
     );
