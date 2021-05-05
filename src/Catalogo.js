@@ -15,7 +15,7 @@ export default function Catalogo() {
             precio: [1699, 1199, 700],
             titulo: 'Walden',
             autor: 'Henry Thoreau',
-            categoria: 'ensayo',
+            categoria: 'ensayos',
             imagen: {WaldenImg},
             descripcion: 'Walden es un ensayo, publicado en 1854, cuyo autor es Henry David Thoreau y constituye uno de los textos de no ficción más famosos escritos por un estadounidense. En él, el autor narra los dos años, dos meses y dos días que vivió en una cabaña construida por él mismo, cercana al lago Walden.'
         },
@@ -24,7 +24,7 @@ export default function Catalogo() {
             precio: [2049, 1599, 599],
             titulo: 'Hacia un futuro vegano',
             autor: 'Tobias Leenaert',
-            categoria: 'ensayo',
+            categoria: 'ensayos',
             imagen: {HaciaUnFuturoVeganoImg},
             descripcion: 'En este libro que invita a la reflexión, Tobias Leenaert se aleja de los caminos más convencionales de la defensa de los animales y aborda las estrategias, los objetivos y las herramientas comunicativas del movimiento vegano y animalista desde un nuevo prisma.'
         },
@@ -69,7 +69,7 @@ export default function Catalogo() {
             precio: [2000, 1200, 400],
             titulo: 'El mito de Sísifo',
             autor: 'Albert Camus',
-            categoria: 'ensayo',
+            categoria: 'ensayos',
             imagen: {SisifoImg},
             descripcion: 'El título del ensayo proviene de un atribulado personaje de la mitología griega. En él, Camus discute la cuestión del suicidio y el valor de la vida, presentando el mito de Sísifo como metáfora del esfuerzo inútil e incesante del hombre. De esta forma plantea la filosofía del absurdo, que mantiene que nuestras vidas son insignificantes y no tienen más valor que el de lo que creamos. Siendo el mundo tan fútil, Camus pregunta, ¿hay alternativa al suicidio? El ensayo se inicia: No hay sino un problema filosófico realmente serio: el suicidio.'
         },

@@ -4,6 +4,7 @@ import './ItemListContainer.css';
 import ItemList from './ItemList/ItemList';
 import Catalogo from '../../Catalogo';
 import loadingGIF from '../../multimedia/loading.gif'
+import loadingGIF2 from '../../multimedia/loading2.gif'
 
 export default function ItemListContainer () {
     const [productos, setProductos] = useState([]);
@@ -19,13 +20,9 @@ export default function ItemListContainer () {
         task.then(resolved => {
             if(category===undefined){
                 setProductos(resolved)
-                console.log('me ejecuté')
-            } else if(category==='ficcion'){
-                const ficcionCategory = resolved.filter(libro => libro.categoria==='ficcion');
-                setProductos(ficcionCategory)
-            } else if(category==='ensayos'){
-                const ensayoCategory = resolved.filter(libro => libro.categoria==='ensayo');
-                setProductos(ensayoCategory)
+            } else{
+                const categoryFilter = resolved.filter(libro=>libro.categoria === category);
+                setProductos(categoryFilter)
             }
         });
         
@@ -35,9 +32,10 @@ export default function ItemListContainer () {
         <div className='ItemListContainer'>
              {productos.length>0 ? <React.Fragment>
             <div id='ItemListContainerFiltros'>
+                <p>Filtros:</p>
                 <ul>
-                    <li><Link to={'categories/ficcion'} style={{color: 'black', textDecoration: 'none'}}>Ficción</Link></li>
-                    <li><Link to={'categories/ensayos'} style={{color: 'black', textDecoration: 'none'}}>Ensayos</Link></li>
+                    <li><Link to={'/categories/ficcion'} style={{color: 'black', textDecoration: 'none'}}>Ficción</Link></li>
+                    <li><Link to={'/categories/ensayos'} style={{color: 'black', textDecoration: 'none'}}>Ensayos</Link></li>
                 </ul>
             </div>
             <div id='ItemListContainerProductos'>
