@@ -6,34 +6,37 @@ import React from 'react';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
+import {CarritoFunctions} from './context/CarritoContext'
 
 function App() {
   return (
-    <React.Fragment>
-      <BrowserRouter>
-        <NavBar />
-        <Switch>
-          
-          <Route path='/detail/:id'>
-            <ItemDetailContainer />
-          </Route>
+    <CarritoFunctions>
+      <React.Fragment>
+        <BrowserRouter>
+          <NavBar />
+          <Switch>
+            
+            <Route path='/detail/:id'>
+              <ItemDetailContainer />
+            </Route>
 
-          <Route exact path='/categories/:category'>
-            <ItemListContainer />
-          </Route>
+            <Route exact path='/categories/:category'>
+              <ItemListContainer />
+            </Route>
 
-          <Route exact path='/categories'>
-            <ItemListContainer />
-          </Route>
+            <Route exact path='/categories'>
+              <ItemListContainer />
+            </Route>
 
-          <Route path='/'>
-            <Home />
-          </Route>
+            <Route path='/'>
+              <Home />
+            </Route>
 
-        </Switch>
-        <Footer />
-      </BrowserRouter>
-    </React.Fragment>
+          </Switch>
+          <Footer />
+        </BrowserRouter>
+      </React.Fragment>
+    </CarritoFunctions>
   )
 }
 

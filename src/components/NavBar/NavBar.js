@@ -1,13 +1,14 @@
 import React from 'react';
 import './NavBar.css';
-import Carrito from '../Carrito/Carrito'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import Imagen from '../../multimedia/shopping-cart.png';
+
 
 export default function NavBar ({padding}) {
     return (
         <nav>
             <div>
-            <Carrito /> 
+                <img src={Imagen} id='carrito-img'/>
                 <ul>
                     <li><Link to={'/'} style={{color: 'white', textDecoration: 'none'}}>Home</Link></li>
                     <li> <Link to={'/categories'} style={{color: 'white', textDecoration: 'none'}}>Libros</Link></li>
