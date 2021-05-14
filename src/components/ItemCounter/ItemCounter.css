@@ -1,0 +1,11 @@
+button.ItemCounterButton, span#ItemCountSpan {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 0px 3px;
+}
+
+span#ItemCountSpan {
+    float: none;
+    height: fit-content;
+}

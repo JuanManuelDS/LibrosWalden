@@ -6,15 +6,17 @@ export const CarritoFunctions = ({children}) => {
 
     const [cart, setCart] = useState([]);
     const [total, setTotal] = useState(0);
+    const [itemCountVisibility, setItemCountVisibility] = useState(true);
+    const [count, setCount] = useState(1)
 
     const addItem = (e,libro) => {
         e.preventDefault();
         //Me devuelve el formato del libro seleccionado
         const bookFormat = e.target.parentElement.querySelector('#formatoLibro').value;
-        
         const isInCartIndex = isInCart(libro, bookFormat);
         //Busco el precio del formato elegido
         let precio = searchPrice(libro, bookFormat);
+        setItemCountVisibility(false)
 
         //Si es -1 significa que ya está en el carrito
         if(isInCartIndex !== -1){
@@ -31,7 +33,7 @@ export const CarritoFunctions = ({children}) => {
                 item: libro,
                 format: bookFormat,
                 price: precio,
-                quantity: 1
+                quantity: count
             }
             setTotal(total+precio)
             setCart([...cart, newItem]);
@@ -87,7 +89,7 @@ export const CarritoFunctions = ({children}) => {
     
 
     return(
-        <CarritoContext.Provider value={{addItem}}>
+        <CarritoContext.Provider value={{addItem, itemCountVisibility, count, setCount}}>
             {children}
         </CarritoContext.Provider>
     )

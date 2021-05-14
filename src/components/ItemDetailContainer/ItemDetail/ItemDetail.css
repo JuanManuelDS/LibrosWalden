@@ -32,7 +32,7 @@ form#ItemDetailForm {
     margin-top: 25px;
 }
 
-form#ItemDetailForm select, form#ItemDetailForm input {
+form#ItemDetailForm select, form#ItemDetailForm input, #ItemCountSpan , .ItemCounterButton {
     background-color: #2c2c2c;
     color: white;
     font-size: 1.1rem;
