@@ -14,7 +14,7 @@ export default function ItemListContainer () {
         const task = new Promise((resolve, reject) => {
             setTimeout(()=>{
                 resolve(Catalogo())
-            }, 2000)
+            }, 500)
         });
 
         task.then(resolved => {

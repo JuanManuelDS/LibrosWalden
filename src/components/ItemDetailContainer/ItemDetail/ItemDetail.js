@@ -1,11 +1,11 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import './ItemDetail.css';
 import {CarritoContext} from './../../../context/CarritoContext'
 
 export default function ItemDetail({libro}) {
     let img=Object.keys(libro.imagen);
 
-    const [onAgregar] = useContext(CarritoContext)
+    const {addItem} = useContext(CarritoContext)
 
     return(
         <div className='ItemDetail'>
@@ -20,7 +20,7 @@ export default function ItemDetail({libro}) {
                         <option value='tapaBlanda'>Tapa blanda ${libro.precio[1]}</option>
                         <option value='ebook'>Ebook ${libro.precio[2]}</option>
                     </select>
-                    <input type='button' onClick={()=>onAgregar(libro)} value='Agregar al Carrito'  />
+                    <input type='submit' onClick={(e)=>addItem(e,libro)} value='Agregar al Carrito'  />
                 </form>
             </div>
         </div>
