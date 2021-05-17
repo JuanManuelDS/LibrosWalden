@@ -6,22 +6,24 @@ export const CarritoFunctions = ({children}) => {
 
     const [cart, setCart] = useState([]);
     const [total, setTotal] = useState(0);
-    const [itemCountVisibility, setItemCountVisibility] = useState(true);
-    const [count, setCount] = useState(1)
 
-    const addItem = (e,libro) => {
+    const addItem = (e,libro,setItemCountVisibility) => {
         e.preventDefault();
         //Me devuelve el formato del libro seleccionado
         const bookFormat = e.target.parentElement.querySelector('#formatoLibro').value;
+        //Me devuelve la cantidad seleccionada
+        /* const itemQuantity = e.target.parentElement.querySelector('#ItemCountSpan').textContent; */
+        const itemQuantity = Number(e.target.parentElement.querySelector('#ItemCountSpan').textContent);
         const isInCartIndex = isInCart(libro, bookFormat);
         //Busco el precio del formato elegido
         let precio = searchPrice(libro, bookFormat);
-        setItemCountVisibility(false)
+
+        setItemCountVisibility(false);
 
         //Si es -1 significa que ya está en el carrito
         if(isInCartIndex !== -1){
             let newCart = [...cart];
-            newCart[isInCartIndex].quantity++;
+            newCart[isInCartIndex].quantity+=itemQuantity;
             //ERROR: necesito saber el precio del item y después multiplicarlo por la cantidad
             newCart[isInCartIndex].price = precio * newCart[isInCartIndex].quantity;
             setTotal(total+precio)
@@ -32,12 +34,13 @@ export const CarritoFunctions = ({children}) => {
             let newItem = {
                 item: libro,
                 format: bookFormat,
-                price: precio,
-                quantity: count
+                price: precio * itemQuantity,
+                quantity: itemQuantity
             }
             setTotal(total+precio)
             setCart([...cart, newItem]);
         }
+        console.log(cart)
         
     }
 
@@ -89,7 +92,7 @@ export const CarritoFunctions = ({children}) => {
     
 
     return(
-        <CarritoContext.Provider value={{addItem, itemCountVisibility, count, setCount}}>
+        <CarritoContext.Provider value={{addItem, deleteItem, cleanCart}}>
             {children}
         </CarritoContext.Provider>
     )

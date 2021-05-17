@@ -6,7 +6,7 @@ main {
 }
 
 
-div.bgDiv{
+.home div.bgDiv{
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -14,7 +14,7 @@ div.bgDiv{
     margin: 0px;
 }
 
-p.tituloHome{
+.home p.tituloHome{
     display: block;
     color: white;
     font-size: 4rem;
@@ -24,7 +24,7 @@ p.tituloHome{
     margin: 0px auto;
 }
 
-div.favoritos {
+.home div.favoritos {
     height: 520px;
     width: 800px;
     background: rgb(226, 226, 226);
@@ -34,14 +34,14 @@ div.favoritos {
     position: relative;
 }
 
-p.favoritos-titulo {
+.home p.favoritos-titulo {
     color: black;
     font-size: 1.8rem;
     text-align: center;
     font-weight: bold;
 }
 
-button.link {
+.home button.link {
     border: none;
     background-color: rgb(49, 49, 49);
     font-weight: bold;
@@ -51,42 +51,42 @@ button.link {
     top: 220px;
 }
 
-button.link span.text,
-button.link span.arrow {
+.home button.link span.text,
+.home button.link span.arrow {
     padding: 0px;
     line-height: 40px;
     font-size: 1.2rem;
     margin: 0px 10px;
 }
 
-button.link span.arrow {
+.home button.link span.arrow {
     float: right;
     font-weight: bold;
 }
 
-div.carousel-item div {
+.home div.carousel-item div {
     position: relative;
 }
 
-div.carousel-item img {
+.home div.carousel-item img {
     height: 350px;
     width: auto;
     float: left;
     margin: 20px 20px 20px 80px;
 }
 
-div.carousel-item div p.titulo{
+.home div.carousel-item div p.titulo{
     font-size: 2rem;
     font-weight: bold;
     margin-top: 20px;
 }
 
-div.carousel-item div p.autor {
+.home div.carousel-item div p.autor {
     font-size: 1.5rem;
     color: rgb(51, 51, 51);
 }
 
-div.carousel-indicators{
+.home div.carousel-indicators{
     margin: 20px 0px 0px 0px
 }
 

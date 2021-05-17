@@ -8,7 +8,7 @@ export default function Home(){
     const catalogo = Catalogo();
     
     return (
-        <main>
+        <main className='home'>
             <div className='bgDiv'>
                 <p className='tituloHome'>LA BÚSQUEDA DE TU LIBRERÍA PREFERIDA TERMINA ACÁ, <br/>EN WALDEN LIBROS</p>
                 <div className='favoritos'>

@@ -6,7 +6,7 @@ import Imagen from '../../multimedia/shopping-cart.png';
 
 export default function NavBar ({padding}) {
     return (
-        <nav>
+        <nav className='navBar'>
             <div>
                 <img src={Imagen} id='carrito-img'/>
                 <ul>
